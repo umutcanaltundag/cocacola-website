@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocacola Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="/img/logo.png" class="logo"></a>
+            <ul class="navigation">
+                <li><a href="#">Anasayfa</a></li>
+                <li><a href="#">Menü</a></li>
+                <li><a href="#">Yeni çeşit</a></li>
+                <li><a href="#">İletişim</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Duygunun tadına varın</h2>
+                <p>Coca-Cola, Amerika Birleşik Devletleri kökenli, karamelize şekerle tatlandırılmış, alkolsüz içecek
+                    markası.
+                    Dünyada en fazla tüketilen meşrubat olan Coca-Cola uluslararası araştırma
+                    sıralamasında 2005-2016 yılında dünyanın en pahalı markası olarak tanındı.</p>
+                <a href="#">Daha fazla bilgi edin</a>
+            </div>
+
+        </div>
+        <ul class="sci">
+            <li><a href="#"> <img src="/img/facebook.png"></a></li>
+            <li><a href="#"> <img src="/img/twitter.png"></a></li>
+            <li><a href="#"> <img src="/img/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>
